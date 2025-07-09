@@ -1,0 +1,38 @@
+{
+  "Request": [
+    {
+      "Author": "john.nguyen",
+      "Repository": [
+        {
+          "Path": "path here",
+          "StartTime": "2025-01-01",
+          "EndTime": "2025-12-01",
+          "Branch": "main"
+        },
+        {
+          "Path": "pass repo path here",
+          "StartTime": "2025-01-01",
+          "EndTime": "2025-12-01",
+          "Branch": "main"
+        }
+      ]
+    },
+    {
+      "Author": "xxx.xxx",
+      "Repository": [
+        {
+          "Path": "path here",
+          "StartTime": "2025-01-01",
+          "EndTime": "2025-12-01",
+          "Branch": "main"
+        },
+        {
+          "Path": "pass repo path here",
+          "StartTime": "2025-01-01",
+          "EndTime": "2025-12-01",
+          "Branch": "main"
+        }
+      ]
+    }
+  ]
+}

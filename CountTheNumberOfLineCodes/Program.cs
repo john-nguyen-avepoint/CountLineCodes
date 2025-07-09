@@ -6,10 +6,14 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace CountTheNumberOfLineCodes;
-class Program
+static class Program
 {
     static void Main()
     {
+        // Using terminal
         CountChangeLineCodesV3.UsingFunction();
+
+        // Using import/export for multiple processes
+        //CountChangedLineCodes_ImportJson.UsingFunction();
     }
 }
