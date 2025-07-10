@@ -51,6 +51,7 @@ namespace CountTheNumberOfLineCodes
                             Commits = isRecordCommitsMessage ? commits : [],
                             StartTime = repo.StartTime,
                             EndTime = repo.EndTime,
+                            ProjectName = repo.ProjectName
                         });
                     }
 
@@ -177,6 +178,7 @@ namespace CountTheNumberOfLineCodes
 
     public class Repository
     {
+        public string ProjectName { get; set; }
         public string Path { get; set; }
         public string StartTime { get; set; }
         public string EndTime { get; set; }
@@ -208,6 +210,7 @@ namespace CountTheNumberOfLineCodes
         public string StartTime { get; set; }
         public string EndTime { get; set; }
         public string Path { get; set; }
+        public string ProjectName { get; set; }
         public int AddedLines { get; set; }
         public int RemovedLines { get; set; }
         public int TotalChangedLines { get; set; }
@@ -218,6 +221,10 @@ namespace CountTheNumberOfLineCodes
     {
         public string Author { get; set; }
         public List<RepositoryResult> Repositories { get; set; }
+        public int TotalCommitCount => Repositories?.Sum(r => r.CommitCount) ?? 0;
+        public int TotalAddedLines => Repositories?.Sum(r => r.AddedLines) ?? 0;
+        public int TotalRemovedLines => Repositories?.Sum(r => r.RemovedLines) ?? 0;
+        public int TotalChangedLines => TotalAddedLines + TotalRemovedLines;
     }
 
     public class ResultOutput

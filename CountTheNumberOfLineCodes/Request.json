@@ -5,12 +5,14 @@
       "Repository": [
         {
           "Path": "path here",
+          "ProjectName": "Name here",
           "StartTime": "2025-01-01",
           "EndTime": "2025-12-01",
           "Branch": "main"
         },
         {
           "Path": "pass repo path here",
+          "ProjectName": "Name here",
           "StartTime": "2025-01-01",
           "EndTime": "2025-12-01",
           "Branch": "main"
@@ -22,12 +24,14 @@
       "Repository": [
         {
           "Path": "path here",
+          "ProjectName": "Name here",
           "StartTime": "2025-01-01",
           "EndTime": "2025-12-01",
           "Branch": "main"
         },
         {
           "Path": "pass repo path here",
+          "ProjectName": "Name here",
           "StartTime": "2025-01-01",
           "EndTime": "2025-12-01",
           "Branch": "main"
